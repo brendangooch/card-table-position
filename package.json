@@ -1,0 +1,43 @@
+{
+    "name": "@brendangooch/card-table-position",
+    "version": "1.0.0",
+    "description": "represents a position on a table (screen) in a game of cards",
+    "author": "B Gooch <brendangooch@gmail.com>",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "build": "tsc -p tsconfig.prod.json",
+        "build-dev": "npm run prebuild && tsc",
+        "prebuild": "npm run remove-lib",
+        "prepack": "npm run build",
+        "remove-lib": "rm -rf lib"
+    },
+    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./lib/index.js"
+    },
+    "types": "./lib/index.d.ts",
+    "files": [
+        "/lib"
+    ],
+    "devDependencies": {
+        "typescript": "^5.7.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/brendangooch/card-table-position.git"
+    },
+    "homepage": "https://github.com/brendangooch/card-table-position#readme",
+    "bugs": {
+        "url": "https://github.com/brendangooch/card-table-position/issues",
+        "email": "brendangooch@gmail.com"
+    },
+    "keywords": [],
+    "dependencies": {
+        "@brendangooch/maths": "^4.0.0",
+        "@brendangooch/random": "^2.0.0"
+    }
+}
