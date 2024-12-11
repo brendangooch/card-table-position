@@ -1,0 +1,2 @@
+v1.0.1
+slight change to builder; was returning a table position with blank properties on build(); have fixed to return a COPY of the internal currentBuild properties

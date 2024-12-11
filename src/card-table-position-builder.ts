@@ -58,7 +58,7 @@ export class CardTablePositionBuilder {
     }
 
     public build(): CardTablePosition {
-        const tablePosition = new CardTablePosition(this.props);
+        const tablePosition = new CardTablePosition({ ...this.currentBuild });
         this.reset();
         return tablePosition;
     }

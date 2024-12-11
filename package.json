@@ -1,6 +1,6 @@
 {
     "name": "@brendangooch/card-table-position",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "represents a position on a table (screen) in a game of cards",
     "author": "B Gooch <brendangooch@gmail.com>",
     "license": "MIT",
